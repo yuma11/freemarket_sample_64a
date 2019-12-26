@@ -7,6 +7,7 @@
         .registration-box__inner
           .registration-box__section
             %h3
+              ニックネーム
               %span 必須
             = f.text_field :name, autofocus: true,class: "sell-box__info--input sell-box__info--name", placeholder: "例）フリマ太郎", value: flash[:name]
 
