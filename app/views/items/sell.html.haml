@@ -1,7 +1,7 @@
 .sell-wrap
   .container
     = link_to root_path do
-      = image_tag '/assets/fmarket_logo_red.svg', class: "sell-wrap__logo"
+      = image_tag 'fmarket_logo_red.svg', class: "sell-wrap__logo"
     = form_with(model: Item, local: true) do |f|
       .sell-box
         %h2 商品の情報を入力
@@ -98,7 +98,7 @@
         %li プライバシーポリシー
         %li メルカリ利用規約
         %li 特定商取引による表記
-    = image_tag '/assets/logo_gray.svg', width: "80px", height: "auto", class: "sell-wrap__logo-bottom"
+    = image_tag 'logo_gray.svg', width: "80px", height: "auto", class: "sell-wrap__logo-bottom"
     %p.copyright &copy; Freemarket_sample_64a
 
 
