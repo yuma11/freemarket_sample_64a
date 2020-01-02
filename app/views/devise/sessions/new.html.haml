@@ -1,5 +1,5 @@
 .wrapper6
-  = form_for(resource, as: resource_name, url: user_session_path(resource_name)) do |f|
+  = form_for(resource, as: resource_name, url: user_session_path) do |f|
     .login-top
       =link_to root_path, class:"" do
         = image_tag 'fmarket_logo_red.png', class: "login-top__logo"
@@ -12,9 +12,7 @@
         =link_to"",class:"" do
           .log-in-main__center--facebook
             %i.fab.fa-facebook-square
-            .facebook-name
-              Facebookでログイン
-        =link_to"",class:"" do
+            =link_to"Facebookでログイン", user_facebook_omniauth_authorize_path, class:"facebook-name" 
           .log-in-main__center--google
             %i.fab.fa-google
             = link_to 'Googleログイン', user_google_omniauth_authorize_path, class: "google-name"
